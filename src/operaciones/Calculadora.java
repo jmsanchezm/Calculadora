@@ -31,4 +31,30 @@ public class Calculadora {
 		int resul=num1/num2;
 		return resul;
 	}
+	
+	public int resta2() {
+		  int resul;
+		  if (resta21())
+		    resul = num1 - num2;
+		  else
+		    resul = num2 - num1;
+		  return resul;
+		}
+	
+	public boolean resta21() {
+		  if (num1 >= num2)
+		    return true;
+		  else
+		    return false;
+		}
+		
+	public Integer divide2() {
+		  Integer resul;
+		  if (num2 == 0)
+		    resul = null;
+		  else
+		    resul = num1 / num2;
+		  return resul;
+		}
+
 }
